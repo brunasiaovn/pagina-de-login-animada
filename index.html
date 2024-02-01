@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login animado</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de login animado</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="pagina-de-login/style.css" />
+  </head>
+  <body>
 
-<body>
-    <div class="box">
-        <span class="borderLine"></span>
-        <form>
-            <h2>Fazer Login</h2>
-            <div class="inputBox">
-            <input type="text" required="required">
-            <span>Nome de Usuário</span>
-            <i></i>
-            </div>
-            <div class="inputBox">
-                <input type="password" required="required">
-                <span>Senha</span>
-                <i></i>
-            </div>
-            <div class="links">
-                <a href="#">Esqueci a senha</a>
-                <a href="#">Registro</a>
-            </div>
-            <input type="submit" volue="Login">
-        </form>
+    <div class="login_form_container">
+      <div class="login_form">
+        <h2>Login</h2>
+        <div class="input_group">
+          <i class="fa fa-user"></i>
+          <input type="text" placeholder="Nome de usuário
+          " class="input_text" autocomplete="off" required/>
+        </div>
+        <div class="input_group">
+          <i class="fa fa-unlock-alt"></i>
+          <input type="password" placeholder="Senha" class="input_text" autocomplete="off" required/>
+        </div>
+        <div class="button_group" id="login_button">
+          <a>Enviar</a>
+        </div>
+        <div class="fotter">
+          <a>
+            Esqueceu sua senha ?</a>
+          <a>Cadastre-se
+        </a>
+        </div>
+      </div>
     </div>
-</body>
-</html>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="pagina-de-login/script.js"></script>
+  </body>
+</html>    
